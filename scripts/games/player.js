@@ -51,8 +51,21 @@ class Player {
 
         ctx.translate(this.x, this.y);  
         ctx.beginPath();
-        ctx.rect(-this.w/2, -this.h/2, this.w, this.h);
 
+        let gradient = ctx.createRadialGradient(0, 0, this.w / 32, 0, 0, this.w * 1.25);
+        gradient.addColorStop(0, 'rgba(255,9,9,0.79)');
+        // gradient.addColorStop(1, '#ffc86355');
+        // ctx.fillStyle = gradient;
+        //ctx.fillStyle = 'rgba(255,200,99,0.84)';
+        ctx.fillStyle = 'rgba(255,255,255,0.26)';
+
+        ctx.arc(0, 0, this.w * 1.25, 0, Math.PI*2);
+        ctx.fill();
+
+        ctx.closePath();
+        ctx.beginPath();
+
+        ctx.rect(-this.w/2, -this.h/2, this.w, this.h);
         ctx.fillStyle = '#000000';
         ctx.fill();
 

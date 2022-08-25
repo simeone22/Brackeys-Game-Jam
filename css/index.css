@@ -8,15 +8,8 @@ body{
     padding: 0;
 }
 
-#canvasWrapper{
-    position: inherit;
-    top: inherit;
-    left: inherit;
-    width: inherit;
-    height: inherit;
-}
-
 #bgCanvas{
+    z-index: -1;
     position: inherit;
     top: inherit;
     left: inherit;
