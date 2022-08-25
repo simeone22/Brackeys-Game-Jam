@@ -1,0 +1,19 @@
+{
+  "name": "lost-in-the-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simeone22/Brackeys-Game-Jam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simeone22/Brackeys-Game-Jam/issues"
+  },
+  "homepage": "https://github.com/simeone22/Brackeys-Game-Jam#readme"
+}
