@@ -9,7 +9,7 @@ class Player {
         this.w = w;
         this.h = h;
 
-        this.speed = 4;
+        this.speed = 6;
         this.acc = 0.1;
 
         this.controls = new controls();
