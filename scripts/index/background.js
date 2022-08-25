@@ -1,7 +1,7 @@
-const canvas = document.getElementById("bgCanvas");
+const canvas = document.getElementById('bgCanvas');
 
-canvas.width = 700;
-canvas.height = 700;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext('2d');
 
