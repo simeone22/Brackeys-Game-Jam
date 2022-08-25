@@ -1,11 +1,11 @@
-let canvas = document.getElementById("bgCanvas");
+const canvas = document.getElementById("bgCanvas");
 
-canvas.width = document.getElementsByTagName('body')[0].clientWidth;
-canvas.height = document.getElementsByTagName('body')[0].clientHeight;
+canvas.width = 700;
+canvas.height = 700;
 
-let ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d');
 
-let pl = new player(0, 0, 100, 100);
+const pl = new player(0, 0, 100, 100);
 
 animate();
 
