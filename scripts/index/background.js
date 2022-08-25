@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext('2d');
 
-const pl = new player(0, 0, 100, 100);
+const pl = new Player(0, 0, 100, 100);
 
 animate();
 

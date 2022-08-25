@@ -41,10 +41,10 @@ class Player {
     }
 
     #movimento(){
-        if(this.controls.down) y -= this.speed;
-        if(this.controls.up) y += this.speed;
-        if(this.controls.left) x -= this.speed;
-        if(this.controls.right) x += this.speed;
+        if(this.controls.down) this.y += this.speed;
+        if(this.controls.up) this.y -= this.speed;
+        if(this.controls.left) this.x += this.speed;
+        if(this.controls.right) this.x -= this.speed;
     }
 
     draw(context){

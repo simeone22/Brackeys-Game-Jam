@@ -12,6 +12,9 @@ app.get('/background.js', (req, res) => {
 app.get('/player.js', (req, res) => {
     res.sendFile(__dirname + '/scripts/games/player.js');
 });
+app.get('/controls.js', (req, res) => {
+    res.sendFile(__dirname + '/scripts/games/controls.js');
+});
 
 let server = http.createServer(app);
 server.listen(8080);
