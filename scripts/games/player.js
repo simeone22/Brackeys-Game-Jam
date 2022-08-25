@@ -37,25 +37,23 @@ class Player {
 
     update(){
         this.#movimento();
-
     }
 
     #movimento(){
         if(this.controls.down) this.y += this.speed;
         if(this.controls.up) this.y -= this.speed;
-        if(this.controls.left) this.x += this.speed;
-        if(this.controls.right) this.x -= this.speed;
+        if(this.controls.left) this.x -= this.speed;
+        if(this.controls.right) this.x += this.speed;
     }
 
-    draw(context){
-        context.save();
-
+    draw(ctx){
         ctx.save();
+
         ctx.translate(this.x, this.y);  
         ctx.beginPath();
         ctx.rect(-this.w/2, -this.h/2, this.w, this.h);
 
-        ctx.fillStyle = '#FF0000';
+        ctx.fillStyle = '#000000';
         ctx.fill();
 
         ctx.restore();
