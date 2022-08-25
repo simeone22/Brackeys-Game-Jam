@@ -24,4 +24,8 @@ class Player {
     setDamage(damage) {
         this.healthPoints -= damage;
     }
+
+    update(){
+
+    }
 }
