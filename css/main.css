@@ -1,0 +1,22 @@
+#main{
+
+    float: left;
+}
+
+#title, #buttonSet, #title *, #buttonSet ul{
+    width: 80%;
+    margin-left: 50%; transform: translateX(-50%);
+}
+
+ul{
+    list-style: none;
+}
+ul a{
+    color: black; text-decoration: none;
+    font-weight: bold;
+
+    border: 1px solid black; border-radius: 5%;
+
+    margin-left: 50%; transform: translateX(-50%);
+    padding: 0.5rem 1rem; margin-bottom: 2rem;
+}

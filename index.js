@@ -6,14 +6,11 @@ let app = express();
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/pages/index.html');
 });
-app.get('/background.js', (req, res) => {
-    res.sendFile(__dirname + '/scripts/index/background.js');
+app.get('/*.js', (req, res) => {
+    res.sendFile(__dirname + '/scripts/' + req.params[0] + '.js');
 });
-app.get('/player.js', (req, res) => {
-    res.sendFile(__dirname + '/scripts/games/player.js');
-});
-app.get('/controls.js', (req, res) => {
-    res.sendFile(__dirname + '/scripts/games/controls.js');
+app.get('/*.css', (req, res) => {
+    res.sendFile(__dirname + '/css/' + req.params[0] + '.css');
 });
 
 let server = http.createServer(app);

@@ -3,9 +3,11 @@
     <head>
         <title>Home</title>
 
-        <script defer src="/controls.js"></script>
-        <script defer src="/player.js"></script>
-        <script defer src="/background.js"></script>
+        <script defer src="/games/controls.js"></script>
+        <script defer src="/games/player.js"></script>
+        <script defer src="/index/background.js"></script>
+        <link href="/index.css" rel="stylesheet">
+        <link href="/main.css" rel="stylesheet">
     </head>
 
     <body>
@@ -29,59 +31,4 @@
             </canvas>
         </div>
     </body>
-
-    <style>
-        body{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        #canvasWrapper{
-            position: inherit;
-            top: inherit;
-            left: inherit;
-            width: inherit;
-            height: inherit;
-        }
-
-        #bgCanvas{
-            position: inherit;
-            top: inherit;
-            left: inherit;
-            width: inherit;
-            height: inherit;
-        }
-
-
-        #main{
-            
-            float: left;
-        }
-
-        #title, #buttonSet, #title *, #buttonSet ul{
-            width: 80%; 
-            margin-left: 50%; transform: translateX(-50%);
-        }
-
-        ul{
-            list-style: none;
-        }
-        ul a{
-            color: black; text-decoration: none;
-            font-weight: bold;
-
-            border: 1px solid black; border-radius: 5%;
-
-            margin-left: 50%; transform: translateX(-50%);
-            padding: 0.5rem 1rem; margin-bottom: 2rem;
-        }
-
-    </style>
-
-
 </html>
